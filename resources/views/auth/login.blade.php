@@ -11,7 +11,7 @@
     <!-- Start css -->
     <link href="{{ asset('assets/css/bootstrap.min.css') }}" rel="stylesheet" type="text/css">
     <link href="{{ asset('assets/css/icons.css') }}" rel="stylesheet" type="text/css">
-    <link href="{{ asset('assets/css/style.css') }}" rel="stylesheet" type="text/css">    
+    <link href="{{ asset('assets/css/style.css') }}" rel="stylesheet" type="text/css">
     <!-- End css -->
 </head>
 <body class="vertical-layout">
@@ -21,7 +21,7 @@
         <div class="container">
             <div class="auth-box login-box">
                 <!-- Start row -->
-                <div class="row no-gutters align-items-center justify-content-center">                    
+                <div class="row no-gutters align-items-center justify-content-center">
                     <!-- Start col -->
                     <div class="col-md-6 col-lg-5">
                         <div class="auth-box-left">
@@ -29,10 +29,10 @@
                                 <div class="card-body">
                                     <h4>Your comminuty awaits.</h4>
                                     <div class="auth-box-icon">
-                                        <img src="assets/images/authentication/auth-box-icon.svg" class="img-fluid" alt="auth-box-icon">
+                                        <img src="{{asset('assets/images/authentication/auth-box-icon.svg')}}" class="img-fluid" alt="auth-box-icon">
                                     </div>
                                     <div class="auth-box-logo">
-                                        <img src="assets/images/logo.svg" class="img-fluid " alt="logo">
+                                        <img src="{{asset('assets/images/logo.svg')}}" class="img-fluid " alt="logo">
                                     </div>
                                 </div>
                             </div>
@@ -46,8 +46,8 @@
                             <div class="card">
                                 <div class="card-body">
 
-                                    <form method="POST" action="{{ route('login') }}">
-                                        
+                                    <form method="POST" action="{{ route('store-login') }}">
+
                                         <h4 class="text-primary mb-4">{{ __('Login') }} !</h4>
 
                                         @csrf
@@ -83,7 +83,7 @@
                                                 </div>
                                             </div>
                                             <div class="col-sm-6">
-                                                <div class="forgot-psw"> 
+                                                <div class="forgot-psw">
                                                     @if (Route::has('password.request'))
                                                         <a class="font-14" href="{{ route('password.request') }}">
                                                             {{ __('Forgot Your Password?') }}
