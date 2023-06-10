@@ -34,7 +34,7 @@ class LoginController extends Controller
 
     public function showLoginForm(Request $request)
     {
-        $data['title'] = 'Login | Allotin';
+        $data['title'] = 'Login | Thespacelit';
 		$data['appenv'] = env('APP_ENV');
         return view('auth.login', compact('data'));
     }

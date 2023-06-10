@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
     <title>{{ config('app.name', 'Laravel') }}</title>
     <!-- Fevicon -->
-    <link rel="shortcut icon" href="{{ asset('assets/images/favicon.ico') }}">
+    <link rel="shortcut icon" href="{{ asset('assets/images/thespacelit/favicon.ico') }}">
 
     <!-- Start css -->
     <link href="{{ asset('assets/css/bootstrap.min.css') }}" rel="stylesheet" type="text/css">
@@ -32,7 +32,7 @@
                                         <img src="{{asset('assets/images/authentication/auth-box-icon.svg')}}" class="img-fluid" alt="auth-box-icon">
                                     </div>
                                     <div class="auth-box-logo">
-                                        <img src="{{asset('assets/images/logo.svg')}}" class="img-fluid " alt="logo">
+                                        <img src="{{asset('assets/images/thespacelit/logo-black.png')}}" class="img-fluid " alt="logo">
                                     </div>
                                 </div>
                             </div>

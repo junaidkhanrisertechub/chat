@@ -2,7 +2,7 @@
                 <!-- Start Logobar -->
                 <div class="logobar">
                     <a href="index.html" class="logo logo-large">
-                      <img src="{{ asset('assets/images/logo.svg') }}" class="img-fluid" alt="logo">
+                      <img src="{{ asset('assets/images/thespacelit/logo-black.png') }}" class="img-fluid" alt="logo">
                     </a>
                     <a href="index.html" class="logo logo-small">
                       <img src="{{ asset('assets/images/small_logo.svg') }}" class="img-fluid" alt="logo">
@@ -53,7 +53,7 @@
                                 <img src="{{ asset('assets/images/svg-icon/dashboard.svg') }}" class="img-fluid" alt="dashboard">
                                 <span>Dashboard</span>
                               </a>
-                          </li> 
+                          </li>
                         @endcan
 
                         @can('user-dashboard')
@@ -62,7 +62,7 @@
                                 <img src="{{ asset('assets/images/svg-icon/dashboard.svg') }}" class="img-fluid" alt="dashboard">
                                 <span>Dashboard</span>
                               </a>
-                          </li> 
+                          </li>
                         @endcan
 
                         @can('user-list')
@@ -84,13 +84,13 @@
                               <img src="{{ asset('assets/images/svg-icon/dashboard.svg') }}" class="img-fluid" alt="dashboard">
                               <span>Attendance</span>
                             </a>
-                        </li> 
+                        </li>
                         <li>
                             <a href="javaScript:void();">
                               <img src="{{ asset('assets/images/svg-icon/dashboard.svg') }}" class="img-fluid" alt="dashboard">
                               <span>Leave</span>
                             </a>
-                        </li>                                                                        
+                        </li>
                     </ul>
                 </div>
                 <!-- End Navigationbar -->
